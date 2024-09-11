@@ -1,0 +1,10 @@
+<app-header-page 
+    title="Productos"
+    description="Listado de productos disponibles en el inventario"
+    btnTitle="Agregar Producto"
+    pathname="/products/new"
+/>
+
+<app-product-list
+    [products]="products()"
+></app-product-list>
