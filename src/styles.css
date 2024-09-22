@@ -17,11 +17,19 @@ body { margin: 0; font-family: Raleway, "Helvetica Neue", sans-serif; }
     li {
         list-style: none;
     }
+    
+    section {
+        @apply pt-[4rem] pb-8
+    }
 }
 
 @layer components {
     .container {
         @apply max-w-[90%] mx-auto
+    }
+
+    .btn{
+        @apply hover:scale-[1.02] transition-all active:scale-100 px-5 py-3 text-sm font-semibold rounded-md
     }
 
     .search-product-input {
@@ -51,11 +59,11 @@ body { margin: 0; font-family: Raleway, "Helvetica Neue", sans-serif; }
     }
     
     .product__list {
-        @apply grid grid-cols-4 gap-4
+        @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4
     }
 
     .product__card {
-        @apply bg-white rounded-sm  cursor-pointer
+        @apply bg-white rounded-sm cursor-pointer hover:bg-slate-500
     }
 
     .card {

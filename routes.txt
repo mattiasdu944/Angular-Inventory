@@ -1,0 +1,2 @@
+/products
+/products/producto-1

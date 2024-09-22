@@ -10,7 +10,7 @@ import { SimpleProduct } from '../../interfaces/simple-product';
   imports: [HeaderPageComponent, ProductListComponent],
   templateUrl: './product-list-page.component.html',
 })
-export class ProductListPageComponent implements OnInit{
+export class ProductListPageComponent implements OnInit {
 
   private productsService = inject(ProductsService);
 
@@ -20,10 +20,11 @@ export class ProductListPageComponent implements OnInit{
     this.loadProducts();
   }
 
-  public loadProducts(page = 0){
-    this.productsService.findAll(page)
-      .subscribe( products => { 
-        this.products.set(products) 
+  public loadProducts() {
+    this.productsService.findAll()
+      .subscribe(products => {
+        this.products.set(products)
+        
       })
   }
 

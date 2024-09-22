@@ -1,1 +1,21 @@
-<p>product-page works!</p>
+<section>
+    <div class="container grid grid-cols-5">
+        <div class="col-span-2 flex items-center justify-center">
+            <img [src]="product()?.image" [alt]="product()?.name"
+                [style]="{ viewTransitionName: 'producto-' + product()?.id}" class="max-w-md z-0">
+        </div>
+        <div class="col-span-3">
+            <h1>{{ product()?.name }}</h1>
+            <p>{{ product()?.category?.name }}</p>
+            <p>{{ product()?.price }}</p>
+            <p>
+                {{ product()?.description }}
+            </p>
+
+            <button class="bg-black text-white btn">
+                Agregar al carrito
+            </button>
+        </div>
+
+    </div>
+</section>

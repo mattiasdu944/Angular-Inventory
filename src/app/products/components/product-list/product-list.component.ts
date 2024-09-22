@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-// import { MatGridList } from '@angular/material/grid-list';
 import { ProductCardComponent } from "../product-card/product-card.component";
 import { SimpleProduct } from '../../interfaces/simple-product';
 
