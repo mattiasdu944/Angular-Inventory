@@ -42,6 +42,18 @@ body { margin: 0; font-family: Raleway, "Helvetica Neue", sans-serif; }
 
 
 @layer utilities {
+    .auth__layout {
+        @apply bg-gradient-to-br from-[#ffc4b9] via-red-400 to-orange-500 min-h-screen
+    }
+
+    .login__form {
+        @apply bg-white w-full max-w-xl mx-auto rounded-lg pt-6 pb-8 px-8 space-y-4 shadow-lg
+    }
+
+    .login__form input {
+        @apply bg-white outline-none rounded-md p-2 px-4 w-full block border-gray-200 border-2 text-sm
+    }
+
     .nav__menu {
         @apply flex justify-center items-center text-sm gap-4 
     }
